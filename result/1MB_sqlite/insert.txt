@@ -1,0 +1,49 @@
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl site.ycsb:foundationdb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /users/gyming/YCSB/foundationdb/conf:/users/gyming/YCSB/foundationdb/target/foundationdb-binding-0.18.0-SNAPSHOT.jar:/users/gyming/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/users/gyming/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/users/gyming/YCSB/foundationdb/fdb-java-7.2.5.jar:/users/gyming/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/users/gyming/.m2/repository/org/slf4j/slf4j-log4j12/1.7.10/slf4j-log4j12-1.7.10.jar:/users/gyming/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/users/gyming/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/users/gyming/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/users/gyming/YCSB/core/target/core-0.18.0-SNAPSHOT.jar site.ycsb.Client -db site.ycsb.db.foundationdb.FoundationDBClient -P /users/gyming/run_ycsb/workloads/1MB/workload_insert -threads 1 -s -load
+Command line: -db site.ycsb.db.foundationdb.FoundationDBClient -P /users/gyming/run_ycsb/workloads/1MB/workload_insert -threads 1 -s -load
+YCSB Client 0.18.0-SNAPSHOT
+
+Loading workload...
+log4j:WARN No appenders could be found for logger (org.apache.htrace.core.Tracer).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting test.
+normal
+start running at 2025.01.31.13:57:48
+amd64
+/lib/linux/amd64/libfdb_c.so
+amd64
+/lib/linux/amd64/libfdb_java.so
+Open normal subspace
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2025-01-31 13:57:58:744 10 sec: 235 operations; 23.5 current ops/sec; est completion in 33 seconds [INSERT: Count=235, Max=141695, Min=33152, Avg=39199.05, 90=41855, 99=50079, 99.9=141695, 99.99=141695] 
+2025-01-31 13:58:08:744 20 sec: 485 operations; 25 current ops/sec; est completion in 22 seconds [INSERT: Count=250, Max=120895, Min=33056, Avg=39879.55, 90=41855, 99=58527, 99.9=120895, 99.99=120895] 
+2025-01-31 13:58:18:744 30 sec: 735 operations; 25 current ops/sec; est completion in 11 seconds [INSERT: Count=250, Max=66751, Min=33248, Avg=39827.39, 90=41887, 99=58431, 99.9=66751, 99.99=66751] 
+2025-01-31 13:58:28:744 40 sec: 992 operations; 25.7 current ops/sec; est completion in 1 second [INSERT: Count=257, Max=66879, Min=32240, Avg=38989.11, 90=41855, 99=58399, 99.9=66879, 99.99=66879] 
+Finish running at 2025.01.31.13:58:29
+2025-01-31 13:58:29:165 40 sec: 1000 operations; 19.05 current ops/sec; [CLEANUP: Count=1, Max=98623, Min=98560, Avg=98592, 90=98623, 99=98623, 99.9=98623, 99.99=98623] [INSERT: Count=8, Max=74687, Min=31856, Avg=41511, 90=41823, 99=74687, 99.9=74687, 99.99=74687] 
+[OVERALL], RunTime(ms), 40422
+[OVERALL], Throughput(ops/sec), 24.7390035129385
+[TOTAL_GCS_G1_Young_Generation], Count, 1
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 14
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.0346346049181139
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 1
+[TOTAL_GC_TIME], Time(ms), 14
+[TOTAL_GC_TIME_%], Time(%), 0.0346346049181139
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 98592.0
+[CLEANUP], MinLatency(us), 98560
+[CLEANUP], MaxLatency(us), 98623
+[CLEANUP], 95thPercentileLatency(us), 98623
+[CLEANUP], 99thPercentileLatency(us), 98623
+[INSERT], Operations, 1000
+[INSERT], AverageLatency(us), 39490.8
+[INSERT], MinLatency(us), 31856
+[INSERT], MaxLatency(us), 141695
+[INSERT], 95thPercentileLatency(us), 41919
+[INSERT], 99thPercentileLatency(us), 58399
+[INSERT], Return=OK, 1000

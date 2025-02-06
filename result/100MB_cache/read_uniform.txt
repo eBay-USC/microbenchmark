@@ -1,0 +1,79 @@
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl site.ycsb:foundationdb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /users/gyming/YCSB/foundationdb/conf:/users/gyming/YCSB/foundationdb/target/foundationdb-binding-0.18.0-SNAPSHOT.jar:/users/gyming/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/users/gyming/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/users/gyming/YCSB/foundationdb/fdb-java-7.2.5.jar:/users/gyming/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/users/gyming/.m2/repository/org/slf4j/slf4j-log4j12/1.7.10/slf4j-log4j12-1.7.10.jar:/users/gyming/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/users/gyming/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/users/gyming/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/users/gyming/YCSB/core/target/core-0.18.0-SNAPSHOT.jar site.ycsb.Client -db site.ycsb.db.foundationdb.FoundationDBClient -P /users/gyming/run_ycsb/workloads/100MB/workload_read_uniform -threads 1 -s -t
+Command line: -db site.ycsb.db.foundationdb.FoundationDBClient -P /users/gyming/run_ycsb/workloads/100MB/workload_read_uniform -threads 1 -s -t
+YCSB Client 0.18.0-SNAPSHOT
+
+Loading workload...
+log4j:WARN No appenders could be found for logger (org.apache.htrace.core.Tracer).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting test.
+normal
+start running at 2025.01.31.18:45:11
+2025-01-31 18:45:11:014 0 sec: 0 operations; est completion in 0 second 
+amd64
+/lib/linux/amd64/libfdb_c.so
+amd64
+/lib/linux/amd64/libfdb_java.so
+Open normal subspace
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2025-01-31 18:45:20:958 10 sec: 13139 operations; 1313.77 current ops/sec; est completion in 6 minutes [READ: Count=13145, Max=15975, Min=475, Avg=696.08, 90=764, 99=937, 99.9=1774, 99.99=13823] 
+2025-01-31 18:45:30:957 20 sec: 27604 operations; 1446.64 current ops/sec; est completion in 5 minutes [READ: Count=14461, Max=173055, Min=461, Avg=684.73, 90=709, 99=758, 99.9=1039, 99.99=16295] 
+2025-01-31 18:45:40:957 30 sec: 42777 operations; 1517.3 current ops/sec; est completion in 5 minutes [READ: Count=15172, Max=15199, Min=477, Avg=653.88, 90=688, 99=752, 99.9=946, 99.99=3237] 
+2025-01-31 18:45:50:957 40 sec: 57466 operations; 1468.9 current ops/sec; est completion in 5 minutes [READ: Count=14689, Max=208383, Min=468, Avg=675.36, 90=664, 99=725, 99.9=1172, 99.99=207231] 
+2025-01-31 18:46:00:957 50 sec: 72291 operations; 1482.5 current ops/sec; est completion in 4 minutes [READ: Count=14825, Max=209151, Min=504, Avg=670.57, 90=660, 99=730, 99.9=1227, 99.99=181375] 
+2025-01-31 18:46:10:957 60 sec: 87171 operations; 1488 current ops/sec; est completion in 4 minutes [READ: Count=14880, Max=208383, Min=521, Avg=668.61, 90=671, 99=713, 99.9=1087, 99.99=17999] 
+2025-01-31 18:46:20:957 70 sec: 101945 operations; 1477.4 current ops/sec; est completion in 4 minutes [READ: Count=14775, Max=208383, Min=514, Avg=673.23, 90=683, 99=726, 99.9=920, 99.99=14007] 
+2025-01-31 18:46:30:957 80 sec: 117270 operations; 1532.5 current ops/sec; est completion in 4 minutes [READ: Count=15325, Max=15559, Min=481, Avg=649.35, 90=672, 99=706, 99.9=856, 99.99=3271] 
+2025-01-31 18:46:40:957 90 sec: 132029 operations; 1475.9 current ops/sec; est completion in 4 minutes [READ: Count=14759, Max=207487, Min=478, Avg=674.45, 90=683, 99=738, 99.9=1009, 99.99=12031] 
+2025-01-31 18:46:50:957 100 sec: 146942 operations; 1491.3 current ops/sec; est completion in 4 minutes [READ: Count=14913, Max=206591, Min=476, Avg=667.53, 90=687, 99=733, 99.9=1098, 99.99=13799] 
+2025-01-31 18:47:00:957 110 sec: 161571 operations; 1462.9 current ops/sec; est completion in 3 minutes [READ: Count=14628, Max=205439, Min=511, Avg=680.59, 90=668, 99=745, 99.9=1332, 99.99=205311] 
+2025-01-31 18:47:10:957 120 sec: 176993 operations; 1542.2 current ops/sec; est completion in 3 minutes [READ: Count=15424, Max=10143, Min=461, Avg=645.38, 90=669, 99=710, 99.9=868, 99.99=3343] 
+2025-01-31 18:47:20:965 130 sec: 191646 operations; 1465.3 current ops/sec; est completion in 3 minutes [READ: Count=14650, Max=205183, Min=522, Avg=679.97, 90=688, 99=759, 99.9=1141, 99.99=9367] 
+2025-01-31 18:47:30:957 140 sec: 206564 operations; 1491.8 current ops/sec; est completion in 3 minutes [READ: Count=14920, Max=10231, Min=544, Avg=666.63, 90=686, 99=731, 99.9=878, 99.99=3445] 
+2025-01-31 18:47:40:957 150 sec: 221639 operations; 1507.5 current ops/sec; est completion in 3 minutes [READ: Count=15074, Max=9695, Min=490, Avg=660.41, 90=680, 99=736, 99.9=874, 99.99=3295] 
+2025-01-31 18:47:50:957 160 sec: 236323 operations; 1468.4 current ops/sec; est completion in 2 minutes [READ: Count=14686, Max=207487, Min=508, Avg=677.91, 90=703, 99=767, 99.9=1122, 99.99=9319] 
+2025-01-31 18:48:00:957 170 sec: 251165 operations; 1484.2 current ops/sec; est completion in 2 minutes [READ: Count=14840, Max=206847, Min=469, Avg=670.83, 90=693, 99=740, 99.9=1005, 99.99=10407] 
+2025-01-31 18:48:10:957 180 sec: 266108 operations; 1494.3 current ops/sec; est completion in 2 minutes [READ: Count=14943, Max=27407, Min=468, Avg=666.25, 90=695, 99=756, 99.9=1109, 99.99=9047] 
+2025-01-31 18:48:20:957 190 sec: 281517 operations; 1540.9 current ops/sec; est completion in 2 minutes [READ: Count=15410, Max=9935, Min=514, Avg=645.97, 90=672, 99=732, 99.9=937, 99.99=3319] 
+2025-01-31 18:48:30:957 200 sec: 297005 operations; 1548.8 current ops/sec; est completion in 2 minutes [READ: Count=15488, Max=9023, Min=506, Avg=642.72, 90=662, 99=739, 99.9=786, 99.99=3305] 
+2025-01-31 18:48:40:957 210 sec: 312177 operations; 1517.2 current ops/sec; est completion in 2 minutes [READ: Count=15171, Max=206847, Min=474, Avg=656.11, 90=660, 99=746, 99.9=1119, 99.99=9015] 
+2025-01-31 18:48:50:957 220 sec: 327368 operations; 1519.1 current ops/sec; est completion in 1 minute [READ: Count=15191, Max=207487, Min=508, Avg=655.28, 90=661, 99=704, 99.9=1132, 99.99=3419] 
+2025-01-31 18:49:00:957 230 sec: 342837 operations; 1546.9 current ops/sec; est completion in 1 minute [READ: Count=15470, Max=9239, Min=467, Avg=643.44, 90=665, 99=708, 99.9=879, 99.99=3783] 
+2025-01-31 18:49:10:957 240 sec: 358056 operations; 1521.9 current ops/sec; est completion in 1 minute [READ: Count=15219, Max=207487, Min=510, Avg=653.57, 90=658, 99=734, 99.9=903, 99.99=3389] 
+2025-01-31 18:49:20:957 250 sec: 373623 operations; 1556.7 current ops/sec; est completion in 1 minute [READ: Count=15566, Max=10127, Min=510, Avg=639.52, 90=656, 99=688, 99.9=846, 99.99=3381] 
+2025-01-31 18:49:30:957 260 sec: 388857 operations; 1523.4 current ops/sec; est completion in 1 minute [READ: Count=15234, Max=10639, Min=474, Avg=653.48, 90=672, 99=743, 99.9=912, 99.99=3471] 
+2025-01-31 18:49:40:957 270 sec: 403797 operations; 1494 current ops/sec; est completion in 1 minute [READ: Count=14940, Max=207359, Min=457, Avg=666.33, 90=675, 99=733, 99.9=1022, 99.99=10127] 
+2025-01-31 18:49:50:957 280 sec: 418822 operations; 1502.5 current ops/sec; est completion in 55 seconds [READ: Count=15025, Max=10239, Min=488, Avg=662.46, 90=700, 99=751, 99.9=869, 99.99=3411] 
+2025-01-31 18:50:00:957 290 sec: 434274 operations; 1545.2 current ops/sec; est completion in 44 seconds [READ: Count=15452, Max=38591, Min=506, Avg=644.18, 90=660, 99=720, 99.9=1120, 99.99=3795] 
+2025-01-31 18:50:10:957 300 sec: 449291 operations; 1501.7 current ops/sec; est completion in 34 seconds [READ: Count=15017, Max=208639, Min=506, Avg=662.97, 90=671, 99=714, 99.9=1094, 99.99=3495] 
+2025-01-31 18:50:20:957 310 sec: 464095 operations; 1480.4 current ops/sec; est completion in 24 seconds [READ: Count=14804, Max=206847, Min=501, Avg=672.54, 90=666, 99=714, 99.9=1257, 99.99=206207] 
+2025-01-31 18:50:30:957 320 sec: 479480 operations; 1538.5 current ops/sec; est completion in 14 seconds [READ: Count=15385, Max=9615, Min=472, Avg=647.01, 90=668, 99=737, 99.9=820, 99.99=3319] 
+2025-01-31 18:50:40:957 330 sec: 494298 operations; 1481.8 current ops/sec; est completion in 4 second [READ: Count=14818, Max=206079, Min=483, Avg=671.86, 90=690, 99=751, 99.9=1130, 99.99=10039] 
+Finish running at 2025.01.31.18:50:44
+2025-01-31 18:50:44:915 333 sec: 500000 operations; 1440.63 current ops/sec; [READ: Count=5701, Max=2153, Min=506, Avg=659.49, 90=676, 99=754, 99.9=820, 99.99=1356] [CLEANUP: Count=1, Max=179583, Min=179456, Avg=179520, 90=179583, 99=179583, 99.9=179583, 99.99=179583] 
+[OVERALL], RunTime(ms), 333959
+[OVERALL], Throughput(ops/sec), 1497.1897747927142
+[TOTAL_GCS_G1_Young_Generation], Count, 47
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 485
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.14522740815489327
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 47
+[TOTAL_GC_TIME], Time(ms), 485
+[TOTAL_GC_TIME_%], Time(%), 0.14522740815489327
+[READ], Operations, 500000
+[READ], AverageLatency(us), 662.602304
+[READ], MinLatency(us), 457
+[READ], MaxLatency(us), 209151
+[READ], 95thPercentileLatency(us), 699
+[READ], 99thPercentileLatency(us), 753
+[READ], Return=OK, 500000
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 179520.0
+[CLEANUP], MinLatency(us), 179456
+[CLEANUP], MaxLatency(us), 179583
+[CLEANUP], 95thPercentileLatency(us), 179583
+[CLEANUP], 99thPercentileLatency(us), 179583

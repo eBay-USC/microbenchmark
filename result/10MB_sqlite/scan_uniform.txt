@@ -1,0 +1,46 @@
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl site.ycsb:foundationdb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /users/gyming/YCSB/foundationdb/conf:/users/gyming/YCSB/foundationdb/target/foundationdb-binding-0.18.0-SNAPSHOT.jar:/users/gyming/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/users/gyming/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/users/gyming/YCSB/foundationdb/fdb-java-7.2.5.jar:/users/gyming/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/users/gyming/.m2/repository/org/slf4j/slf4j-log4j12/1.7.10/slf4j-log4j12-1.7.10.jar:/users/gyming/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/users/gyming/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/users/gyming/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/users/gyming/YCSB/core/target/core-0.18.0-SNAPSHOT.jar site.ycsb.Client -db site.ycsb.db.foundationdb.FoundationDBClient -P /users/gyming/run_ycsb/workloads/10MB/workload_scan_uniform -threads 1 -s -t
+Command line: -db site.ycsb.db.foundationdb.FoundationDBClient -P /users/gyming/run_ycsb/workloads/10MB/workload_scan_uniform -threads 1 -s -t
+YCSB Client 0.18.0-SNAPSHOT
+
+Loading workload...
+log4j:WARN No appenders could be found for logger (org.apache.htrace.core.Tracer).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting test.
+normal
+start running at 2025.01.31.14:10:09
+2025-01-31 14:10:09:995 0 sec: 0 operations; est completion in 0 second 
+amd64
+/lib/linux/amd64/libfdb_c.so
+amd64
+/lib/linux/amd64/libfdb_java.so
+Open normal subspace
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Finish running at 2025.01.31.14:10:15
+2025-01-31 14:10:15:877 5 sec: 200 operations; 33.65 current ops/sec; [CLEANUP: Count=1, Max=162943, Min=162816, Avg=162880, 90=162943, 99=162943, 99.9=162943, 99.99=162943] [SCAN: Count=200, Max=261887, Min=1491, Avg=25332.21, 90=43263, 99=105535, 99.9=261887, 99.99=261887] 
+[OVERALL], RunTime(ms), 5943
+[OVERALL], Throughput(ops/sec), 33.65303718660609
+[TOTAL_GCS_G1_Young_Generation], Count, 8
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 61
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 1.0264176341914857
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 8
+[TOTAL_GC_TIME], Time(ms), 61
+[TOTAL_GC_TIME_%], Time(%), 1.0264176341914857
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 162880.0
+[CLEANUP], MinLatency(us), 162816
+[CLEANUP], MaxLatency(us), 162943
+[CLEANUP], 95thPercentileLatency(us), 162943
+[CLEANUP], 99thPercentileLatency(us), 162943
+[SCAN], Operations, 200
+[SCAN], AverageLatency(us), 25332.21
+[SCAN], MinLatency(us), 1491
+[SCAN], MaxLatency(us), 261887
+[SCAN], 95thPercentileLatency(us), 61503
+[SCAN], 99thPercentileLatency(us), 105535
+[SCAN], Return=OK, 200

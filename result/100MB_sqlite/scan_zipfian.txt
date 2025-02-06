@@ -1,0 +1,67 @@
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl site.ycsb:foundationdb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+java -cp /users/gyming/YCSB/foundationdb/conf:/users/gyming/YCSB/foundationdb/target/foundationdb-binding-0.18.0-SNAPSHOT.jar:/users/gyming/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/users/gyming/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/users/gyming/YCSB/foundationdb/fdb-java-7.2.5.jar:/users/gyming/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/users/gyming/.m2/repository/org/slf4j/slf4j-log4j12/1.7.10/slf4j-log4j12-1.7.10.jar:/users/gyming/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/users/gyming/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/users/gyming/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/users/gyming/YCSB/core/target/core-0.18.0-SNAPSHOT.jar site.ycsb.Client -db site.ycsb.db.foundationdb.FoundationDBClient -P /users/gyming/run_ycsb/workloads/100MB/workload_scan_zipfian -threads 1 -s -t
+Command line: -db site.ycsb.db.foundationdb.FoundationDBClient -P /users/gyming/run_ycsb/workloads/100MB/workload_scan_zipfian -threads 1 -s -t
+YCSB Client 0.18.0-SNAPSHOT
+
+Loading workload...
+log4j:WARN No appenders could be found for logger (org.apache.htrace.core.Tracer).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting test.
+normal
+start running at 2025.01.31.18:10:21
+2025-01-31 18:10:21:983 0 sec: 0 operations; est completion in 0 second 
+amd64
+/lib/linux/amd64/libfdb_c.so
+amd64
+/lib/linux/amd64/libfdb_java.so
+Open normal subspace
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2025-01-31 18:10:31:923 10 sec: 11 operations; 1.1 current ops/sec; est completion in 30 minutes [SCAN: Count=11, Max=1881087, Min=39872, Avg=845342.55, 90=1696767, 99=1881087, 99.9=1881087, 99.99=1881087] 
+2025-01-31 18:10:41:923 20 sec: 22 operations; 1.1 current ops/sec; est completion in 29 minutes [SCAN: Count=11, Max=1551359, Min=5056, Avg=870568.91, 90=1420287, 99=1551359, 99.9=1551359, 99.99=1551359] 
+2025-01-31 18:10:51:923 30 sec: 35 operations; 1.3 current ops/sec; est completion in 28 minutes [SCAN: Count=13, Max=1547263, Min=49120, Avg=685001.85, 90=1535999, 99=1547263, 99.9=1547263, 99.99=1547263] 
+2025-01-31 18:11:01:923 40 sec: 51 operations; 1.6 current ops/sec; est completion in 25 minutes [SCAN: Count=16, Max=1623039, Min=18176, Avg=637923, 90=1366015, 99=1623039, 99.9=1623039, 99.99=1623039] 
+2025-01-31 18:11:11:923 50 sec: 72 operations; 2.1 current ops/sec; est completion in 22 minutes [SCAN: Count=21, Max=1471487, Min=15048, Avg=500522.86, 90=1228799, 99=1471487, 99.9=1471487, 99.99=1471487] 
+2025-01-31 18:11:21:923 60 sec: 83 operations; 1.1 current ops/sec; est completion in 23 minutes [SCAN: Count=11, Max=1788927, Min=86144, Avg=854356.36, 90=1307647, 99=1788927, 99.9=1788927, 99.99=1788927] 
+2025-01-31 18:11:31:923 70 sec: 98 operations; 1.5 current ops/sec; est completion in 22 minutes [SCAN: Count=15, Max=1533951, Min=6020, Avg=693735.6, 90=1317887, 99=1533951, 99.9=1533951, 99.99=1533951] 
+2025-01-31 18:11:41:923 80 sec: 129 operations; 3.1 current ops/sec; est completion in 19 minutes [SCAN: Count=31, Max=1808383, Min=1681, Avg=352850.74, 90=1222655, 99=1808383, 99.9=1808383, 99.99=1808383] 
+2025-01-31 18:11:51:923 90 sec: 149 operations; 2 current ops/sec; est completion in 18 minutes [SCAN: Count=20, Max=1588223, Min=2902, Avg=448749.75, 90=1404927, 99=1588223, 99.9=1588223, 99.99=1588223] 
+2025-01-31 18:12:01:923 100 sec: 175 operations; 2.6 current ops/sec; est completion in 17 minutes [SCAN: Count=26, Max=1656831, Min=1958, Avg=418152.81, 90=970239, 99=1656831, 99.9=1656831, 99.99=1656831] 
+2025-01-31 18:12:11:923 110 sec: 197 operations; 2.2 current ops/sec; est completion in 16 minutes [SCAN: Count=22, Max=1275903, Min=4360, Avg=415992.45, 90=864767, 99=1275903, 99.9=1275903, 99.99=1275903] 
+2025-01-31 18:12:21:923 120 sec: 231 operations; 3.4 current ops/sec; est completion in 15 minutes [SCAN: Count=34, Max=1762303, Min=1703, Avg=318144.21, 90=918015, 99=1762303, 99.9=1762303, 99.99=1762303] 
+2025-01-31 18:12:31:923 130 sec: 269 operations; 3.8 current ops/sec; est completion in 13 minutes [SCAN: Count=38, Max=1668095, Min=2194, Avg=261130.34, 90=694783, 99=1668095, 99.9=1668095, 99.99=1668095] 
+2025-01-31 18:12:41:923 140 sec: 323 operations; 5.4 current ops/sec; est completion in 12 minutes [SCAN: Count=54, Max=766975, Min=1170, Avg=190197.89, 90=644095, 99=739839, 99.9=766975, 99.99=766975] 
+2025-01-31 18:12:51:923 150 sec: 363 operations; 4 current ops/sec; est completion in 11 minutes [SCAN: Count=40, Max=1379327, Min=4836, Avg=248453.35, 90=908287, 99=1379327, 99.9=1379327, 99.99=1379327] 
+2025-01-31 18:13:01:923 160 sec: 424 operations; 6.1 current ops/sec; est completion in 9 minutes [SCAN: Count=61, Max=934399, Min=1311, Avg=153825.02, 90=538623, 99=822271, 99.9=934399, 99.99=934399] 
+2025-01-31 18:13:11:923 170 sec: 507 operations; 8.3 current ops/sec; est completion in 8 minutes [SCAN: Count=83, Max=1309695, Min=1216, Avg=126440.12, 90=377087, 99=852991, 99.9=1309695, 99.99=1309695] 
+2025-01-31 18:13:21:923 180 sec: 650 operations; 14.3 current ops/sec; est completion in 6 minutes [SCAN: Count=143, Max=1148927, Min=1348, Avg=71068.24, 90=159487, 99=947199, 99.9=1148927, 99.99=1148927] 
+2025-01-31 18:13:31:923 190 sec: 959 operations; 30.9 current ops/sec; est completion in 3 minutes [SCAN: Count=309, Max=767999, Min=1051, Avg=32301.07, 90=36223, 99=312063, 99.9=767999, 99.99=767999] 
+2025-01-31 18:13:41:923 200 sec: 1381 operations; 42.2 current ops/sec; est completion in 1 minute [SCAN: Count=422, Max=543231, Min=1080, Avg=23677.29, 90=36031, 99=211839, 99.9=543231, 99.99=543231] 
+2025-01-31 18:13:51:923 210 sec: 1904 operations; 52.3 current ops/sec; est completion in 11 seconds [SCAN: Count=523, Max=57055, Min=1121, Avg=19076.73, 90=34047, 99=38495, 99.9=39679, 99.99=57055] 
+Finish running at 2025.01.31.18:13:54
+2025-01-31 18:13:54:001 212 sec: 2000 operations; 46.2 current ops/sec; [CLEANUP: Count=1, Max=118591, Min=118528, Avg=118560, 90=118591, 99=118591, 99.9=118591, 99.99=118591] [SCAN: Count=96, Max=40511, Min=1418, Avg=20476.6, 90=35679, 99=38495, 99.9=40511, 99.99=40511] 
+[OVERALL], RunTime(ms), 212079
+[OVERALL], Throughput(ops/sec), 9.430448087740888
+[TOTAL_GCS_G1_Young_Generation], Count, 83
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 253
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.11929516830992223
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 83
+[TOTAL_GC_TIME], Time(ms), 253
+[TOTAL_GC_TIME_%], Time(%), 0.11929516830992223
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 118560.0
+[CLEANUP], MinLatency(us), 118528
+[CLEANUP], MaxLatency(us), 118591
+[CLEANUP], 95thPercentileLatency(us), 118591
+[CLEANUP], 99thPercentileLatency(us), 118591
+[SCAN], Operations, 2000
+[SCAN], AverageLatency(us), 105571.9735
+[SCAN], MinLatency(us), 1051
+[SCAN], MaxLatency(us), 1881087
+[SCAN], 95thPercentileLatency(us), 702975
+[SCAN], 99thPercentileLatency(us), 1413119
+[SCAN], Return=OK, 2000
