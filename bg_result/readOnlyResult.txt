@@ -1,0 +1,36 @@
+===========================================
+Running experiment with populateDB=populateDB_1, ReadOnlyActions=ReadOnlyActions_1, threads=1, expected actions=1000
+===========================================
+Result: 20 sec: 1000 actions; 28.79 current acts/sec;  20 sec: 1000 operations; 28.79 current ops/sec; [PROFILE AverageResponseTime(us)=12596.5]
+===========================================
+Running experiment with populateDB=populateDB_1, ReadOnlyActions=ReadOnlyActions_1, threads=10, expected actions=1000
+===========================================
+Result: 10 sec: 1000 actions; 99.94 current acts/sec;  10 sec: 1000 operations; 99.94 current ops/sec; [PROFILE AverageResponseTime(us)=8846.06]
+===========================================
+Running experiment with populateDB=populateDB_1, ReadOnlyActions=ReadOnlyActions_1, threads=100, expected actions=1000
+===========================================
+Result: 10 sec: 1000 actions; 99.91 current acts/sec;  10 sec: 1000 operations; 99.91 current ops/sec; [PROFILE AverageResponseTime(us)=81128.09]
+===========================================
+Running experiment with populateDB=populateDB_2, ReadOnlyActions=ReadOnlyActions_2, threads=1, expected actions=10000
+===========================================
+Result: 250 sec: 10000 actions; 11 current acts/sec;  250 sec: 10000 operations; 11 current ops/sec; [PROFILE AverageResponseTime(us)=22782.05]
+===========================================
+Running experiment with populateDB=populateDB_2, ReadOnlyActions=ReadOnlyActions_2, threads=10, expected actions=10000
+===========================================
+Result: 40 sec: 10000 actions; 229.98 current acts/sec;  40 sec: 10000 operations; 229.98 current ops/sec; [PROFILE AverageResponseTime(us)=26241.25]
+===========================================
+Running experiment with populateDB=populateDB_2, ReadOnlyActions=ReadOnlyActions_2, threads=100, expected actions=10000
+===========================================
+Result: 40 sec: 10000 actions; 119.29 current acts/sec;  40 sec: 10000 operations; 119.29 current ops/sec; [PROFILE AverageResponseTime(us)=179812.2]
+===========================================
+Running experiment with populateDB=populateDB_3, ReadOnlyActions=ReadOnlyActions_3, threads=1, expected actions=100000
+===========================================
+Result: 3460 sec: 100000 actions; 6.2 current acts/sec;  3460 sec: 100000 operations; 6.2 current ops/sec; [PROFILE AverageResponseTime(us)=29472.6]
+===========================================
+Running experiment with populateDB=populateDB_3, ReadOnlyActions=ReadOnlyActions_3, threads=10, expected actions=100000
+===========================================
+Result: 2890 sec: 100000 actions; 10.8 current acts/sec;  2890 sec: 100000 operations; 10.8 current ops/sec; [PROFILE AverageResponseTime(us)=43763.54]
+===========================================
+Running experiment with populateDB=populateDB_3, ReadOnlyActions=ReadOnlyActions_3, threads=100, expected actions=100000
+===========================================
+Result: 3130 sec: 100000 actions; 53.2 current acts/sec;  3130 sec: 100000 operations; 53.2 current ops/sec; [PROFILE AverageResponseTime(us)=960323.97]
